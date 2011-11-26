@@ -116,6 +116,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/zte/blade/media_profiles.xml:system/etc/media_profiles.xml
 
+#Touchscreen fix
+PRODUCT_COPY_FILES += \
+    device/zte/blade/synaptics-rmi-touchscreen.idc:/system/usr/idc/synaptics-rmi-touchscreen.idc
+
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
     ro.com.android.dateformat=dd-MM-yyyy \
